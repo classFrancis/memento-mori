@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Layout, Card } from 'antd';
 import { imagesUrl } from "./ImagesUrl";
+import '../styles/main.css'
 
 let { Meta } = Card;
 let { Header, Content, Footer } = Layout;
@@ -17,8 +18,8 @@ function MainComponent() {
                 }}>
 
                 </Header>
-                <Content>
-                    <Flex style={{marginTop: "50px"}} justify="center" gap="large">
+                <Content style={{marginTop: "50px"}}>
+                    <Flex className="container-main" justify="center" gap="large" align="center">
                         <Card
                             hoverable
                             style={{
