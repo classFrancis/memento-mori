@@ -18,7 +18,9 @@ function MainComponent() {
                     display: 'flex',
                     alignItems: 'center',
                 }}>
-                    <LogOutButton />
+                    <Flex className="header-content" gap="large">
+                       <LogOutButton /> 
+                    </Flex>
                 </Header>
                 <Content style={{marginTop: "50px"}}>
                     <Flex className="container-main" justify="center" gap="large" align="center">
