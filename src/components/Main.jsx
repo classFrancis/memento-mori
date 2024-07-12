@@ -1,7 +1,9 @@
 import React from "react";
+import '../styles/main.css'
 import { Flex, Layout, Card } from 'antd';
 import { imagesUrl } from "./ImagesUrl";
-import '../styles/main.css'
+import LogOutButton from "./LogoutBtn";
+
 
 let { Meta } = Card;
 let { Header, Content, Footer } = Layout;
@@ -16,7 +18,7 @@ function MainComponent() {
                     display: 'flex',
                     alignItems: 'center',
                 }}>
-
+                    <LogOutButton />
                 </Header>
                 <Content style={{marginTop: "50px"}}>
                     <Flex className="container-main" justify="center" gap="large" align="center">
